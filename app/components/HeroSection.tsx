@@ -144,7 +144,7 @@ const HeroSection = () => {
 									<h3 className="text-2xl font-bold mb-2 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:to-purple-400 transition-all duration-300">
 										BioVision
 									</h3>
-									<p className="text-gray-400 mb-6 group-hover:text-gray-300 transition-colors">Your Personal Fitness Companion</p>
+									<p className="text-gray-400 mb-6 group-hover:text-gray-300 transition-colors">Capture. Analyze. Identify. Diagnose.</p>
 
 									{/* Stats Grid */}
 									<div className="grid grid-cols-3 gap-4 mb-6">
