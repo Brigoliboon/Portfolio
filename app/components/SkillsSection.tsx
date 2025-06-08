@@ -84,7 +84,7 @@ const SkillsSection = () => {
 										{/* Skill-specific badges */}
 										<div className="flex flex-wrap sm:flex-nowrap gap-1">
 											{skill.tags.map((tag) =>(
-												<span className={`px-2 py-0.5 text-xs rounded-full bg-${tag.color}-500/10 text-${tag.color}-400 border border-${tag.color}-500/20`}>{tag.name}</span>
+												<span key={tag.name} className={`px-2 py-0.5 text-xs rounded-full bg-${tag.color}-500/10 text-${tag.color}-400 border border-${tag.color}-500/20`}>{tag.name}</span>
 											))}
 										</div>
 									</div>
