@@ -1,7 +1,4 @@
 'use client';
-
-import { a } from "framer-motion/client";
-
 interface App {
 	id: number;
 	name: string;
@@ -63,8 +60,8 @@ const AppShowcase = () => {
 				<h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Featured Projects</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
 					{apps.map((app) => (
-						<a href={`${app.link}`}>
-						<div key={app.id} className="group h-fit bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-1">
+						<a key={app.id} href={`${app.link}`}>
+						<div className="group h-fit bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-1">
 							<div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl sm:rounded-2xl overflow-hidden p-4 sm:p-6 relative">
 								<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
 									{/* App Icon */}
