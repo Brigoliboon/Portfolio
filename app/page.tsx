@@ -10,8 +10,8 @@ export default function MobileDevPortfolio() {
 	return (
 		<main className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white overflow-x-hidden">
 			<HeroSection />
-			<SkillsSection />
 			<AppShowcase />
+			<SkillsSection />
 			<DevelopmentProcess />
 			<ContactSection />
 		</main>
