@@ -54,7 +54,7 @@ export const metadata: Metadata = {
 	twitter: {
 		card: 'summary_large_image',
 		title: 'Boon Jefferson S. Brigoli - Mobile Developer',
-		description: 'Passionate mobile developer creating exceptional iOS and Android applications. Explore my projects and app development expertise.',
+		description: 'Passionate full stack developer creating exceptional website and Android applications. Explore my projects and app development expertise.',
 		creator: '@Brigoliboon',
 		images: ['/og-image.jpg'],
 	},
