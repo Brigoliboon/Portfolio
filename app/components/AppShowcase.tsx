@@ -1,11 +1,14 @@
 'use client';
 
+import { a } from "framer-motion/client";
+
 interface App {
 	id: number;
 	name: string;
 	description: string;
 	technologies: string[];
 	platforms: string[];
+	link: string;
 	downloads: string;
 	rating: number;
 }
@@ -17,6 +20,7 @@ const apps: App[] = [
 		description: 'Plant Detection, Plant Health Diagnonsis and Plantcare tips',
 		technologies: ['Machine Learning', 'Java', 'Python', 'FastAPI', 'Firebase'],
 		platforms: ['Android', 'Website'],
+		link:"https://bio-vision-api.vercel.app/",
 		downloads: '--',
 		rating: 0,
 	},
@@ -26,6 +30,7 @@ const apps: App[] = [
 		description: 'Real-time hazard mapping, Distress signal response, geo-location tracking',
 		technologies: ['Java', 'Python', 'FastAPI', 'Firebase', 'Mapbox'],
 		platforms: ['Android'],
+		link:"#",
 		downloads: '--',
 		rating: 0,
 	},
@@ -35,6 +40,7 @@ const apps: App[] = [
 		description: 'A movie streaming website with enhanced user interctivity and simple User Interface',
 		technologies: ['Vanilla js', 'HTML', 'CSS'],
 		platforms: ['website'],
+		link:"https://streamify-io.netlify.app/",
 		downloads: '--',
 		rating: 0,
 	},
@@ -44,6 +50,7 @@ const apps: App[] = [
 		description: 'A NASA Space Apps Challenge 2024 Project',
 		technologies: ['Vanilla js', 'Three.js', 'Bootsrap'],
 		platforms: ['website'],
+		link:"https://final-orrery.vercel.app/",
 		downloads: '--',
 		rating: 0,
 	},
@@ -56,6 +63,7 @@ const AppShowcase = () => {
 				<h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Featured Projects</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
 					{apps.map((app) => (
+						<a href={`${app.link}`}>
 						<div key={app.id} className="group h-fit bg-gradient-to-b from-gray-800/50 to-gray-900/50 rounded-xl sm:rounded-2xl p-1">
 							<div className="bg-gradient-to-b from-gray-900 to-gray-800 rounded-xl sm:rounded-2xl overflow-hidden p-4 sm:p-6 relative">
 								<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6">
@@ -134,6 +142,7 @@ const AppShowcase = () => {
 								</div>
 							</div>
 						</div>
+						</a>
 					))}
 				</div>
 			</div>
